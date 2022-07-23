@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Bed Booking Application | Bluelook | Projects</title>
+    <meta
+      name="description"
+      content="Hospital bed booking management systems became a pivotal practice after the National Health Service’s statement rule on patient’s emergency trolley waiting hours."
+    />
+    <meta
+      name="keywords"
+      content="Bluelooktech,Bluelook, hospital bed booking application, hospital bed booking , Hospital bed booking management systems, hospital bed booking system, HBBMS"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/img/logo/icon_bulelook.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/img/logo/icon_bulelook.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="assets/img/logo/icon_bulelook.png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      type="image/png"
+      href="assets/img/logo/icon_bulelook.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font/font.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-210344120-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-210344120-1");
+    </script>
+  </head>
+
+  <body>
+    <!-- header start -->
+
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top"
+    >
+      <div class="container-fluid bd-highlight mb-3">
+        <a class="navbar-brand me-auto p-2 bd-highlight" href="/"
+          ><img src="assets/img/logo/bluelook_logo_for_web.png" alt="Bluelook"
+        /></a>
+
+        <button
+          class="navbar-toggler p-2 bd-highlight"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/bluelook/about">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/bluelook/process">Process</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/bluelook/testimonial"
+                    >Testimonials</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/bluelook/life-at-bluelook"
+                    >Life @ Bluelook</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/bluelook/careers">Careers</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/bluelook/engagement-model"
+                    >Engagement Model</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/services"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+              >
+                Services
+              </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 p-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">Product Development</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="/services/saas-application-development"
+                            class="dropdown-item"
+                            >SaaSCommerce</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/serverless-development"
+                            class="dropdown-item"
+                            >Serverless Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/MVP-development"
+                            class="dropdown-item"
+                            >MVP Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/eCommerce-development"
+                            class="dropdown-item"
+                            >eDevelopment</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">Mobile Apps</h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="/services/ios-development"
+                            class="dropdown-item"
+                            >IOS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/android-development"
+                            class="dropdown-item"
+                            >Android</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/react-native-development"
+                            class="dropdown-item"
+                            >React Native</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/flutter-development"
+                            class="dropdown-item"
+                            >Flutter</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">
+                        Intelligent Automation
+                      </h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="/services/ai-development"
+                            class="dropdown-item"
+                            >AI</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/iot-development"
+                            class="dropdown-item"
+                            >IOT Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/rpa-development"
+                            class="dropdown-item"
+                            >RPA</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/chatbot-development"
+                            class="dropdown-item"
+                            >Chatbot Development</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="/services/Mobile-App-development"
+                            >Mobile App Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/web-development"
+                            class="dropdown-item"
+                            >Web Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/iot-development"
+                            class="dropdown-item"
+                            >IoT Development</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/ui-development"
+                            class="dropdown-item"
+                            >User Experience Design</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/digital-marketing"
+                            class="dropdown-item"
+                            >Digital Marketing</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/staff-augmentation"
+                            class="dropdown-item"
+                            >Staff Augmentation</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/devops-consulting-service"
+                            class="dropdown-item"
+                            >DevOps Consulting Services</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/services/digital-transformation"
+                            class="dropdown-item"
+                            >Digital Transformation</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- dropdown-mega-menu.// -->
+            </li>
+            <li class="nav-item dropdown has-megamenu">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/technologies"
+                id="navbarDropdown"
+                data-bs-toggle="dropdown"
+              >
+                Hire Developers
+              </a>
+              <div class="dropdown-menu megamenu" role="menu">
+                <div class="row g-3 p-3">
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">
+                        Backend Technologies
+                      </h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="/technologies/laravel-development"
+                            class="dropdown-item"
+                            >Laravel PHP</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/nodeJS-development"
+                            class="dropdown-item"
+                            >Node js</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/java-spring-foot-development"
+                            class="dropdown-item"
+                            >Java spring boot</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/asb-development"
+                            class="dropdown-item"
+                            >ASP.NET</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">
+                        Frontend Technologies
+                      </h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a
+                            href="/technologies/angular-development"
+                            class="dropdown-item"
+                            >Angular.js</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/vue-development"
+                            class="dropdown-item"
+                            >Vue.js</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/ios-development"
+                            class="dropdown-item"
+                            >IOS</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/android-development"
+                            class="dropdown-item"
+                            >Android</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="/technologies/react-native-development"
+                            class="dropdown-item"
+                            >React Native</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <h6 class="title ps-3 color-main">
+                        UI/UX Designing Tools
+                      </h6>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a class="dropdown-item">Adobe Photoshop</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Adobe Illustrator</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item">Adobe XD</a>
+                        </li>
+                        <li><a class="dropdown-item">Figma</a></li>
+                      </ul>
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <div class="col-lg-3 col-12">
+                    <div class="col-megamenu">
+                      <img
+                        class="nav-img"
+                        src="assets/img/tech.webp"
+                        alt="Tech"
+                      />
+                    </div>
+                    <!-- col-megamenu.// -->
+                  </div>
+                  <!-- end col-3 -->
+                </div>
+                <!-- end row -->
+              </div>
+              <!-- dropdown-mega-menu.// -->
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Industries
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/bluelook/industries/health-care"
+                    >Health Care</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/bluelook/our-products"
+                id="navbarDropdown"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Our Products</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="/bluelook/blogs"
+                id="navbarDropdown"
+                tabindex="-1"
+                aria-disabled="true"
+              >
+                Blogs</a
+              >
+            </li>
+          </ul>
+          <div class="flot-end">
+            <a href="https://twitter.com/bluelook_tech"
+              ><i class="fa fa-twitter pe-3 nav-icon" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.instagram.com/bluelooktech_bangalore/"
+              ><i class="fa fa-instagram pe-3 nav-icon" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.facebook.com/bluelooktech.2018/"
+              ><i class="fa fa-facebook pe-3 nav-icon" aria-hidden="true"></i
+            ></a>
+            <a href="https://www.youtube.com/channel/UCPeTer4AwPjc7R1Wyh-mrbw"
+              ><i
+                class="fa fa-youtube-play pe-3 nav-icon"
+                aria-hidden="true"
+              ></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/company/bluelook-technologies-pvt-ltd"
+              ><i class="fa fa-linkedin pe-3 nav-icon" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <form class="d-flex p-2 bd-highlight">
+          <button class="btn btn btn-primary me-2" type="button">
+            <a href="#contact" class="text-white">Contact</a>
+          </button>
+        </form>
+      </div>
+    </nav>
+    <!-- header end -->
+
+    <!-- Hero Banner Section -->
+    <section class="hero-banner bg-primary py-5">
+      <div class="container">
+        <div class="row row align-items-center">
+          <div class="col-lg-5 offset-lg-1 order-lg-1">
+            <img
+              src="assets/img/banner/bed.webp"
+              class="img-fluid"
+              data-aos="fade-up"
+              data-aos-duration="8000"
+              alt="IOS Development"
+              title="We Provide IOS Services"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mt-3 text-white">Welcome to HBBMS</h1>
+            <p class="lead text-secondary my-5 text-white">
+              We help you find a nearby covid hospitals and make a reservation.
+            </p>
+            <a
+              href="#contact"
+              class="btn btn-outline-secondary btn-lg border text-white"
+              >Join with Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Banner Section End -->
+
+    <section>
+      <div class="container">
+        <h5
+          class="secation-head text-uppercase text-center mt-5 w-50 m-auto width-100 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          Covid-19 Hospital Bed Booking management System
+        </h5>
+        <div class="row">
+          <div class="col p-4">
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Hospital bed booking management systems became a pivotal practice
+              after the National Health Service’s statement rule on patient’s
+              emergency trolley waiting hours. After an accident, inconvenient
+              waiting hours in hospital waiting halls due to improper
+              operational capacity planning and control over managing,
+              allotting, and maintaining beds may turn frustrating when
+              emergency care is required. The lack of real-time data analysis
+              provides a disadvantage resulting in patient overcrowding and
+              malefactions in inpatient bed booking services during emergencies.
+            </p>
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Monitoring and managing inpatient-outpatient capacity & patient
+              inflows can be challenging tasks during emergencies. Unplanned
+              inventory, the inability of beds, and other scarce resources may
+              lead to poor operations, and that affects the hospital’s goodwill.
+              The data integrated robust bed booking management systems improve
+              healthcare services by optimizing operations. The digitalized
+              data-driven hospital bed booking management system is a process in
+              which, it has a real-time status of all the available beds and the
+              bed occupied, to plan for the efficient use of beds. It helps the
+              staff and management by reducing the time of counting and
+              recording the availability of. It includes predictive planning,
+              altering beds during emergencies, improved individual patient
+              care, efficiency in diagnosis, and systematized operations.
+            </p>
+          </div>
+          <div class="col p-4">
+            <img
+              class="img-fluid d-flex flex-wrap align-content-center"
+              src="assets/img/projects/title.webp"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-4">
+            <img
+              class="img-fluid d-flex flex-wrap align-content-center"
+              src="assets/img/projects/define.webp"
+            />
+          </div>
+          <div class="col p-4">
+            <h3 class="cye-lm-tag">DEFINING HBBMS</h3>
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              The hospital bed booking management system is a fusion and
+              integration of various systems, which perform and fulfil distinct
+              operations at the basic level of hospital management. The systems
+              include EHR (electronic health records), ADT system (admission,
+              discharge, and transfer system), emergency department information
+              system, and BMS (bed management system). Utilizing the mentioned
+              technologies and their significant insights help in determining a
+              flowchart of hospital operations that can better the existing bed
+              management system. The optimized hospital information helps in
+              better operations during addressing accidental & emergency cases,
+              medical assessment cases, and patients transferred from other
+              hospitals for better treatment.
+            </p>
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <b> ADT system: </b>The admission, discharge, and transfer systems
+              are popularly known as ADT that digitally records information
+              regarding patient status, medication details, allotted bed
+              duration, etc. The ADT system is a digital data analytical tool
+              that uses data analysis to predict and provide real-time
+              information on patient demographic data. The accessibility of
+              analyzing this information can provide an advantage in
+              understanding each bed status in a particular ward for better
+              hospital operations. During an A&E (accident or emergency)
+              situation, the time in allotting and shifting reserved patients to
+              vacant beds can be reduced by announcing the list of available
+              beds in different wards. It helps in taking preventive action
+              against emergencies in a hospital. EHR systems: An electronic
+              health records system is a digital tabulation of patients’ paper
+              charts that provide real-time instant access to individual patient
+              history for authorized users. The data stored in EHR is in an
+              unstructured format. Leveraging NLP tools help in analyzing,
+              interpreting, and decoding valuable insights from data. These
+              insights can predict the chance of re-admissions of old patients,
+              outpatient records, and realtime status of admitted patients.
+              Hence with this data, the hospital operations management can
+              divide and calculate the no. of beds available for occupancy in
+              every ward and the reserved time and date of regular patients who
+              often visit the hospital for checkups.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-6 aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h5>EDIS:</h5>
+            <p class="font-italic cye-lm-tag"></p>
+            <p class="inline-custom-text-style cye-lm-tag">
+              A&amp;E portal plays a vital role in hospital bed management as
+              85% of the cases where the hospital runs out of resources is
+              during emergency and accidental mishaps. Predicting and analyzing
+              real-time data and follow up of hospital operations is crucial
+              during this situation. The emergency data information system is
+              integrated with electronic patient records that provide suitable
+              information for clinical and hospital management to tackle
+              emergencies. Information provided supports patient care and
+              operations information, efficient treatment for better cure,
+              notifications on shortage of inventory, and prioritizes in
+              increasing hospital revenues.
+            </p>
+            <p class="cye-lm-tag"></p>
+          </div>
+          <div
+            class="col-md-6 aos-init aos-animate"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <h5>HBBMS:</h5>
+            <p class="font-italic cye-lm-tag"></p>
+            <p class="inline-custom-text-style cye-lm-tag">
+              The hospital bed management system provides real-time data access
+              to staff and senior management regarding vacant, preoccupied,
+              reserved information of beds through digital dashboard. The HBBMS
+              is systematically interconnected with other systems like ADT,
+              EDIS, and EHR for obtaining, resourcing, and analyzing real-time
+              data.
+            </p>
+            <p class="cye-lm-tag"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h5
+          class="secation-head text-uppercase text-center mt-5 w-50 m-auto width-100 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          Tracking
+        </h5>
+        <div class="row">
+          <div class="col p-4">
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Tracking all the activities of the patient from the day he has
+              admitted plays a very crucial role. The Hospital Bed Management
+              service must not only allocate the beds but also has to record all
+              the medical records of the patient from the day one till he gets
+              discharged. The system has to record all the details of the
+              patient for future reference.
+            </p>
+          </div>
+          <div class="col p-4">
+            <img
+              class="img-fluid d-flex flex-wrap align-content-center"
+              src="assets/img/projects/locater.webp"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col p-4">
+            <img
+              class="img-fluid d-flex flex-wrap align-content-center"
+              src="assets/img/projects/access.webp"
+            />
+          </div>
+          <div class="col p-4">
+            <h3 class="cye-lm-tag">Easy Access</h3>
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              Hospital Bed Management services are easy to access, a person with
+              little knowledge about the concept can easily take care about the
+              Hospital Bed Management System, as it is very clear and plain to
+              understand, and the other important feature of this system is that
+              it records and tracks all the data about the patient from the day,
+              he got admitted to the date, he got discharged, and even this
+              process can be done easily without any inconvenience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="text-white bg-primary p-3">
+      <div class="container">
+        <h5
+          class="secation-head text-white text-uppercase text-center mt-5 w-50 m-auto width-100 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          WHAT IS THE SIGNIFICANCE OF HOSPITAL BED MANAGEMENT?
+        </h5>
+        <div class="row">
+          <div class="col p-4">
+            <p
+              class="text-center mt-3 aos-init aos-animate"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              HBBMS lessens time spent by staff and senior staff in physically
+              counting and recording bed information and with BMS as every staff
+              in a hospital has required information regarding a particular
+              patient on a particular bed, helps in offering better treatment
+              and diagnosis procedure. With the availability of A&E information,
+              HBBMS provides real-time information regarding hospital inventory
+              and resource management.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h5
+          class="secation-head text-uppercase text-center mt-5 w-50 m-auto width-100 aos-init aos-animate"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          BENEFITS OF HBBMS
+        </h5>
+        <div class="row shadow">
+          <div
+            class="col-sm-6 getshadow p-4 aos-init aos-animate"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Ease of flow between intra and internal department communications.
+            </p>
+          </div>
+          <div
+            class="col-sm-6 getshadow p-4 aos-init aos-animate"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              It helps in ending up patients’ long waiting hours, treatments in
+              unhygienic environment, and Oxygen availability transferring to
+              other hospitals.
+            </p>
+          </div>
+        </div>
+        <div class="row shadow">
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              It improves time management to eradicate delays in surgeries and
+              operation cancellations due to the unavailability of OT.
+            </p>
+          </div>
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Better management of internal resources and provides guided
+              instructions for housekeeping in bedding that increases personal
+              patient care.
+            </p>
+          </div>
+        </div>
+        <div class="row shadow">
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Clear understanding of every patient through pre-designed
+              diagnosis for each bed defined with a distinct bed number.
+            </p>
+          </div>
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Helps in bed assignment operations through data mismatch.
+            </p>
+          </div>
+        </div>
+        <div class="row shadow">
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Improving patients care by understanding patient demographics.
+            </p>
+          </div>
+          <div
+            class="col-sm-6 getshadow p-4 aos-init"
+            data-aos="zoom-out"
+            data-aos-duration="1000"
+          >
+            <p class="h5 cye-lm-tag">
+              Helps in designing and developing new models for better management
+              of inventory.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <div class="container mt-3 mb-5" id="contact">
+      <h5
+        class="secation-head text-uppercase text-center m-auto mt-5 w-50 width-100"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        GET IN TOUCH
+      </h5>
+      <div class="row">
+        <div class="col-6 col-md-4 m-auto mt-5">
+          <img
+            src="assets/img/projects/contact.webp"
+            class="img-fluid"
+            alt="contact"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="container mt-4">
+            <!-- <h3>Interact with We!</h3> -->
+            <form
+              class="row g-3"
+              action="/sendMail"
+              method="POST"
+              enctype="multipart/form-data"
+            >
+              <div class="col-md-6">
+                <label for="yourName " class="fw-bolder fs-6 mb-1"
+                  >Enter Your Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="yourName"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="phoneNumber" class="fw-bolder fs-6 mb-1"
+                  >Phone Number(Optional)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  name="phone"
+                  id="phoneNumber"
+                />
+              </div>
+              <!-- <div class="col-md-6">
+                      <label for="lastName" class="form-label">Enter Your Email</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                    </div> -->
+              <div class="col-md-6">
+                <label for="emailInfo" class="fw-bolder fs-6 mb-1"
+                  >E-mail</label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  id="emailInfo"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <label for="services" class="fw-bolder fs-6 mb-1"
+                  >Services</label
+                >
+                <select
+                  name="services"
+                  name="services"
+                  class="form-control"
+                  id="services"
+                >
+                  <option value="volvo">Select Service</option>
+                  <option value="Website Development">
+                    Website Development
+                  </option>
+                  <option value="UI/UX Design ">UI/UX Design</option>
+                  <option value="IOS App Development">
+                    IOS App Development
+                  </option>
+                  <option value="Android App Development">
+                    Android App Development
+                  </option>
+                  <option value="Ecommerce App Development">
+                    Ecommerce App Development
+                  </option>
+                  <option value="Web design">Web design</option>
+                  <option value="SEO">SEO</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+
+              <div class="col-md-12">
+                <label for="subjectTitle" class="fw-bolder fs-6 mb-1"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  id="subjectTitle"
+                  required
+                />
+              </div>
+              <div class="col-md-12">
+                <label for="comments" class="fw-bolder fs-6 mb-1"
+                  >Write Message</label
+                >
+                <textarea
+                  class="form-control"
+                  name="body"
+                  id="comments"
+                  rows="3"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-md-6">
+                <label for="myfile" class="fw-bolder fs-6 mb-1"
+                  >Attach a file (Optional)</label
+                >
+                <input
+                  type="file"
+                  name="files"
+                  id="myfile"
+                  name="myfile"
+                  class="form-control"
+                /><br /><br />
+              </div>
+
+              <div class="col-md-6 mt-5">
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End-->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark footer-bg">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row row-cols-1 row-cols-md-4 m-auto">
+            <!-- Grid column -->
+            <div class="col">
+              <h6 class="text-uppercase mb-4 font-weight-bold">COMPANY</h6>
+              <p>
+                <a href="/bluelook/about" class="footer-hover second-color"
+                  >About</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/bluelook/testimonial"
+                  class="footer-hover second-color"
+                  >Testimonial</a
+                >
+              </p>
+              <p>
+                <a href="/bluelook/process" class="footer-hover second-color"
+                  >Process</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/bluelook/life-at-bluelook"
+                  class="footer-hover second-color"
+                  >Life @ Bluelook</a
+                >
+              </p>
+              <p>
+                <a href="/bluelook/careers" class="footer-hover second-color"
+                  >Careers</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/bluelook/engagement-model"
+                  class="footer-hover second-color"
+                  >Engagement Model</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col">
+              <h6 class="text-uppercase mb-4 font-weight-bold">SERVICES</h6>
+              <p>
+                <a
+                  href="/services/Mobile-App-development"
+                  class="footer-hover second-color"
+                  >Mobile App Development</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/web-development"
+                  class="footer-hover second-color"
+                  >Web Development</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/ui-development"
+                  class="footer-hover second-color"
+                  >User Experience Design</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/iot-development"
+                  class="footer-hover second-color"
+                  >IOT Development</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/chatbot-development"
+                  class="footer-hover second-color"
+                  >Chatbot Development</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/staff-augmentation"
+                  class="footer-hover second-color"
+                  >Staff Augmentation</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/services/digital-transformation"
+                  class="footer-hover second-color"
+                  >Digital Transformation</a
+                >
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col">
+              <h6 class="text-uppercase mb-4 font-weight-bold">RESOURCE</h6>
+              <p>
+                <a href="/bluelook/blogs" class="footer-hover second-color"
+                  >Blog</a
+                >
+              </p>
+              <p>
+                <a
+                  href="/bluelook/our-products"
+                  class="footer-hover second-color"
+                  >Our Products</a
+                >
+              </p>
+              <p>
+                <a href="/technologies" class="footer-hover second-color"
+                  >Technologies</a
+                >
+              </p>
+              <h6 class="text-uppercase mb-4 font-weight-bold">SUPPORT</h6>
+              <p>
+                <a class="footer-hover second-color">24/7 Customer Service</a>
+              </p>
+            </div>
+
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+
+            <!-- Grid column -->
+            <div class="col">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+
+              <a class="navbar-brand" href="/"
+                ><img
+                  src="assets/img/logo/bluelook_logo_for_web.png"
+                  alt="Bluelook"
+              /></a>
+
+              <p class="second-color mt-4">
+                Location:
+                <span class="text-primary fs-6">Bangalore, India</span>
+              </p>
+              <p class="second-color mt-2">
+                Business:
+                <span class="text-primary fs-6">hello@bluelooktech.com</span>
+              </p>
+              <p class="second-color">
+                Job Mail: <span class="text-primary"> hr@bluelooktech.com</span>
+              </p>
+
+              <a href="https://join.skype.com/invite/veiT43OOhP9V">
+                <p class="second-color">
+                  Skype: <span class="text-primary"> sathya@bluelook</span>
+                </p>
+              </a>
+
+              <p class="second-color mt-2">
+                <img
+                  class="flofs me-2"
+                  src="assets/img/icons/India.webp"
+                  alt="Bluelook"
+                />India - +91 9952491705
+              </p>
+              <p class="second-color mt-2">
+                <img
+                  class="flofs me-2"
+                  src="assets/img/icons/India.webp"
+                  alt="Bluelook"
+                />India - +91 9597444726
+              </p>
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="my-3" />
+
+        <!-- Section: Copyright -->
+        <section class="p-3 pt-0">
+          <div class="row d-flex align-items-center">
+            <!-- Grid column -->
+            <div class="col-md-7 col-lg-8 text-center text-md-start">
+              <!-- Copyright -->
+              <div class="p-3">
+                © 2022 Copyright: Bluelook Technologies Pvt Ltd
+              </div>
+              <!-- Copyright -->
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+              <a
+                href="https://www.facebook.com/bluelooktech.2018/"
+                class="btn btn-outline-dark btn-floating m-1"
+                class="text-secondary"
+                role="button"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="https://www.instagram.com/bluelooktech_bangalore/"
+                class="btn btn-outline-dark btn-floating m-1"
+                class="text-secondary"
+                role="button"
+                ><i class="fa fa-instagram" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="https://twitter.com/bluelook_tech"
+                class="btn btn-outline-dark btn-floating m-1"
+                class="text-secondary"
+                role="button"
+                ><i class="fa fa-twitter" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="https://www.linkedin.com/company/bluelook-technologies-pvt-ltd"
+                class="btn btn-outline-dark btn-floating m-1"
+                class="text-secondary"
+                role="button"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+
+              <a
+                href="https://www.youtube.com/channel/UCPeTer4AwPjc7R1Wyh-mrbw"
+                class="btn btn-outline-dark btn-floating m-1"
+                class="text-secondary"
+                role="button"
+                ><i class="fa fa-youtube-play" aria-hidden="true"></i
+              ></a>
+            </div>
+            <!-- Grid column -->
+          </div>
+        </section>
+        <!-- Section: Copyright -->
+      </div>
+      <!-- Grid container -->
+    </footer>
+    <!-- Footer End-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.js"
+      integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function () {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = "https://embed.tawk.to/60af645c6699c7280da93052/1f6mi039t";
+        s1.charset = "UTF-8";
+        s1.setAttribute("crossorigin", "*");
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+  </body>
+</html>

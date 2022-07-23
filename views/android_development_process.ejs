@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginners Android App Development Process | Bluelooktech</title>
+    <meta name="description"
+        content="The best features that come with apps are what pique consumers' curiosity. Apps make phones today smart, and their benefits have dramatically altered how we work today.">
+    <meta name="keywords"
+        content="Bluelooktech,Bluelook , android app development process, android app development process, android mobile app development process, development process of android application, android software development process, android processing development environment, Beginners Android App Development Process,,blogs, bluelook's blogs, bluelook's newsletter, ">
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo/icon_bulelook.png">
+    <link rel="icon" type="image/png" href="assets/img/logo/icon_bulelook.png">
+    <link rel="apple-touch-icon" type="image/png" href="assets/img/logo/icon_bulelook.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font/font.css" />
+    <link rel="stylesheet" type="text/css" href="assets/vendor/aos/aos.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-210344120-1"></script>
+</head>
+
+<body>
+    <!-- header start -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow sticky-top">
+        <div class="container-fluid bd-highlight mb-3">
+            <a class="navbar-brand me-auto p-2 bd-highlight" href="/"><img
+                    src="assets/img/logo/bluelook_logo_for_web.png" alt="Bluelook" /></a>
+
+            <button class="navbar-toggler p-2 bd-highlight" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+
+            </button>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Company
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="/bluelook/about">About</a></li>
+                            <li><a class="dropdown-item" href="/bluelook/process">Process</a></li>
+                            <li><a class="dropdown-item" href="/bluelook/testimonial">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="/bluelook/life-at-bluelook">Life @ Bluelook</a></li>
+                            <li><a class="dropdown-item" href="/bluelook/careers">Careers</a></li>
+                            <li>
+                                <a class="dropdown-item" href="/bluelook/engagement-model">Engagement Model</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="/services" id="navbarDropdown"
+                            data-bs-toggle="dropdown">
+                            Services
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3 p-3">
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">
+                                            Product Development
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/services/saas-application-development"
+                                                    class="dropdown-item">SaaSCommerce</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/serverless-development"
+                                                    class="dropdown-item">Serverless Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/MVP-development" class="dropdown-item">MVP
+                                                    Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/eCommerce-development"
+                                                    class="dropdown-item">eDevelopment</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">Mobile Apps</h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="/services/ios-development" class="dropdown-item">IOS</a></li>
+                                            <li><a href="/services/android-development"
+                                                    class="dropdown-item">Android</a></li>
+                                            <li>
+                                                <a href="/services/react-native-development" class="dropdown-item">React
+                                                    Native</a>
+                                            </li>
+                                            <li><a href="/services/flutter-development"
+                                                    class="dropdown-item">Flutter</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">
+                                            Intelligent Automation
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li><a href="/services/ai-development" class="dropdown-item">AI</a></li>
+                                            <li>
+                                                <a href="/services/iot-development" class="dropdown-item">IOT
+                                                    Development</a>
+                                            </li>
+                                            <li><a href="/services/rpa-development" class="dropdown-item">RPA</a></li>
+                                            <li>
+                                                <a href="/services/chatbot-development" class="dropdown-item">Chatbot
+                                                    Development</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item" href="/services/Mobile-App-development">Mobile
+                                                    App Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/web-development" class="dropdown-item">Web
+                                                    Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/iot-development" class="dropdown-item">IoT
+                                                    Development</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/ui-development" class="dropdown-item">User Experience
+                                                    Design</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/digital-marketing" class="dropdown-item">Digital
+                                                    Marketing</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/staff-augmentation" class="dropdown-item">Staff
+                                                    Augmentation</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/devops-consulting-service"
+                                                    class="dropdown-item">DevOps Consulting
+                                                    Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="/services/digital-transformation" class="dropdown-item">Digital
+                                                    Transformation</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link dropdown-toggle" href="/technologies" id="navbarDropdown"
+                            data-bs-toggle="dropdown">
+                            Technologies
+                        </a>
+                        <div class="dropdown-menu megamenu" role="menu">
+                            <div class="row g-3 p-3">
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">
+                                            Backend Technologies
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/technologies/laravel-development"
+                                                    class="dropdown-item">Laravel PHP</a>
+                                            </li>
+                                            <li><a href="/technologies/nodeJS-development" class="dropdown-item">Node
+                                                    js</a></li>
+                                            <li>
+                                                <a href="/technologies/java-spring-foot-development"
+                                                    class="dropdown-item">Java spring boot</a>
+                                            </li>
+                                            <li><a href="/technologies/asb-development"
+                                                    class="dropdown-item">ASP.NET</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">
+                                            Frontend Technologies
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="/technologies/angular-development"
+                                                    class="dropdown-item">Angular.js</a>
+                                            </li>
+                                            <li><a href="/technologies/vue-development" class="dropdown-item">Vue.js</a>
+                                            </li>
+                                            <li><a href="/technologies/ios-development" class="dropdown-item">IOS</a>
+                                            </li>
+                                            <li><a href="/technologies/android-development"
+                                                    class="dropdown-item">Android</a></li>
+                                            <li>
+                                                <a href="/technologies/react-native-development"
+                                                    class="dropdown-item">React Native</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <h6 class="title ps-3 color-main">
+                                            UI/UX Designing Tools
+                                        </h6>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a class="dropdown-item">Adobe Photoshop</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item">Adobe Illustrator</a>
+                                            </li>
+                                            <li>
+                                                <a class="dropdown-item">Adobe XD</a>
+                                            </li>
+                                            <li><a class="dropdown-item">Figma</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <div class="col-lg-3 col-12">
+                                    <div class="col-megamenu">
+                                        <img class="nav-img" src="assets/img/tech.webp" alt="Tech" />
+                                    </div>
+                                    <!-- col-megamenu.// -->
+                                </div>
+                                <!-- end col-3 -->
+                            </div>
+                            <!-- end row -->
+                        </div>
+                        <!-- dropdown-mega-menu.// -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bluelook/our-products" id="navbarDropdown" tabindex="-1"
+                            aria-disabled="true">
+                            Our Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/bluelook/blogs" id="navbarDropdown" tabindex="-1"
+                            aria-disabled="true">
+                            Blogs</a>
+                    </li>
+                </ul>
+                <div class="flot-end">
+                    <a href="https://twitter.com/bluelook_tech"><i class="fa fa-twitter pe-3 nav-icon"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/bluelooktech_bangalore/"><i class="fa fa-instagram pe-3 nav-icon"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/bluelooktech.2018/"><i class="fa fa-facebook pe-3 nav-icon"
+                            aria-hidden="true"></i></a>
+                    <a href="https://www.youtube.com/channel/UCPeTer4AwPjc7R1Wyh-mrbw"><i
+                            class="fa fa-youtube-play pe-3 nav-icon" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/bluelook-technologies-pvt-ltd"><i
+                            class="fa fa-linkedin pe-3 nav-icon" aria-hidden="true"></i></a>
+                </div>
+
+            </div>
+            <form class="d-flex p-2 bd-highlight">
+                <button class="btn btn btn-primary me-2" type="button"><a href="#contact"
+                        class="text-white">Contact</a></button>
+            </form>
+        </div>
+
+    </nav>
+    <!-- header end -->
+
+    <div id="fixed-social">
+        <div>
+            <a href="https://www.facebook.com/bluelooktech.2018/" class="fixed-facebook" target="_blank"><i class="fa fa-facebook"></i> <span>Facebook</span></a>
+        </div>
+        <div>
+            <a href="https://twitter.com/bluelook_tech" class="fixed-twitter" target="_blank"><i class="fa fa-twitter"></i> <span>Twitter</span></a>
+        </div>
+        <div>
+            <a href="#" class="fixed-gplus" target="_blank"><i class="fa fa-google"></i> <span>Google+</span></a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/company/bluelook-technologies-pvt-ltd" class="fixed-linkedin" target="_blank"><i class="fa fa-linkedin"></i> <span>LinkedIn</span></a>
+        </div>
+        <div>
+            <a href="https://www.instagram.com/bluelooktech_bangalore/" class="fixed-instagrem" target="_blank"><i class="fa fa-instagram"></i>
+                <span>Instagram</span></a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/channel/UCPeTer4AwPjc7R1Wyh-mrbw" class="fixed-tumblr" target="_blank"><i class="fa fa-youtube-play"></i> <span>youtube</span></a>
+        </div>
+    </div>
+    
+    <Section>
+        <!-- Page content-->
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">Beginners Android App Development Process</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Posted on Nov 15, 2021 by Start Bluelook</div>
+                            <!-- Post categories-->
+                            <a class="badge bg-secondary text-decoration-none link-light"
+                                href="/technologies/android-development">Android</a>
+                            <a class="badge bg-secondary text-decoration-none link-light"
+                                href="/bluelook/blogs">Technology</a>
+                            <a class="badge bg-secondary text-decoration-none link-light"
+                                href="/bluelook/blogs">Resources </a>
+                            <a class="badge bg-secondary text-decoration-none link-light"
+                                href="/bluelook/blogs">Startups </a>
+                        </header>
+                        <!-- Preview image figure-->
+                        <figure class="mb-4"><img class="img-fluid rounded"
+                                src="assets/img/news and blog/android_development_Process.webp" alt="..." /></figure>
+                        <!-- Post content-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">The best features that come with apps are what pique consumers'
+                                curiosity. Apps make phones "today smart," and their benefits have dramatically altered
+                                how we work today. Expert programmers are hard at work, creating and constructing their
+                                own programs and infusing them with beneficial features. In this post, we will go over
+                                the following topics for Beginners <a href="/services/android-development">Android App
+                                    Development</a> that you
+                                should be aware of
+                                before beginning to build an Android application:</p>
+
+                            <ol>
+                                <li class="fs-5 mb-2">1. Introduction to Android</li>
+                                <li class="fs-5 mb-2">2. Master the language</li>
+                                <li class="fs-5 mb-2">3. Right application development tools and environment</li>
+                                <li class="fs-5 mb-2">4. Application components</li>
+                                <li class="fs-5 mb-2">5. The android application, threads, loaders, and tasks</li>
+                                <li class="fs-5 mb-2">6. Choosing the right tools</li>
+                                <li class="fs-5 mb-2">7. Conclusion</li>
+                            </ol>
+                            <h2 class="fw-bolder mb-4 mt-5">1. Introduction to Android:</h2>
+                            <h3 class="fw-bolder mb-4 mt-3">What is Android?</h3>
+                            <p class="fs-5 mb-4"><a href="/technologies/android-development">Android</a> is an operating
+                                system built for mobile devices, where
+                                mobile
+                                devices are defined by the presence of touch displays and sensors. The fact that the
+                                Android operating system is based on the <span class="fw-bold">Linux kernel</span> is
+                                an essential feature. And, in
+                                order to execute a program, it is powered by a Java-based virtual machine known as the
+                                <span class="fw-bold">Dalvik VM.</span>
+                            </p>
+
+                            <h3 class="fw-bolder mb-4 mt-5">Basic Architecture of Android</h3>
+
+                            <p class="fs-5 mb-4"><span class="fw-bold">APPs</span> (top layer): Android apps are
+                                Java-based programs that are compiled into byte code, packaged, and deployed on the
+                                Android system.</p>
+
+                            <p class="fs-5 mb-4"><span class="fw-bold">Application Framework</span> (layer 2): The
+                                application framework is the layer that offers the services required for Android apps to
+                                execute, such as the window manager, telephony manager, location manager, and resource
+                                managers, among others.</p>
+                            <p class="fs-5 mb-4"><span class="fw-bold">Android Native Libraries</span> (layers 3–1):
+                                Android native libraries provide APIs for a variety of functions. For example, database
+                                APIs (such as SQLite), WebKit APIs, SSL APIs, OpenGL, and so on.</p>
+
+                            <p class="fs-5 mb-4"><span class="fw-bold">Android Runtime</span> (layer 3–2): In addition
+                                to the libraries, the same layer contains the Android runtime, which comprises of the
+                                Dalvik virtual machine, as previously explained, as well as the core Java libraries. The
+                                core Java libraries are essentially the Android equivalent of the standard Java
+                                libraries, often known as JDKs.</p>
+                            <p class="fs-5 mb-4"><span class="fw-bold">Linux Kernel</span> (basic layer): As previously
+                                stated, this is the foundation of the Android operating system and is a regular Linux
+                                kernel with certain tweaks developed by Google that may be used to communicate with
+                                devices.</p>
+
+                            <h2 class="fw-bolder mb-4 mt-5">2. Master the Language</h2>
+                            <p class="fs-5 mb-4">The two most common programming languages used in <a
+                                    href="/services/android-development">Android app
+                                    development</a> are Java and XML. As a result, knowledge and expertise in these
+                                programming
+                                languages are required before developing an Android app. The following are some of the
+                                principles of the Java programming language:
+                            </p>
+                            <ol>
+                                <li class="fs-5 mb-2">1. Packages</li>
+                                <li class="fs-5 mb-2">2. Objects & classes</li>
+                                <li class="fs-5 mb-2">3. Inheritance & interfaces</li>
+                                <li class="fs-5 mb-2">4. Strings & numbers, generics</li>
+                                <li class="fs-5 mb-2">5. Collections</li>
+                                <li class="fs-5 mb-2">6. Concurrency</li>
+                            </ol>
+                            <p class="fs-5 mb-4">Proper understanding of Java and XML will help you build/develop a more
+                                robust and elegant android app.
+                            </p>
+                            <h2 class="fw-bolder mb-4 mt-5">3. Right application development tools and environment</h2>
+                            <p class="fs-5 mb-4">If you are new to <a href="/services/android-development">Android app
+                                    development</a>, it is critical that you become acquainted with the build automation
+                                tools as well as the integrated development environment before beginning to develop your
+                                app. For the tools, you may use Android app studio IDE or Eclipse; these will help you
+                                understand the basics and many other things that will help you better your code. You may
+                                study Apache Maven, Apache Ant, and Gradle since they offer a robust collection of tools
+                                for controlling your builds.
+                            </p>
+                            <p class="fs-5 mb-4">It is also critical that you become acquainted with source control
+                                tools and principles. Learn how to use git and then set up a git-source repository (by
+                                creating an account on Bitbucket or GitHub). The Git Pocket Guide can help you learn the
+                                fundamental principles and words that govern how the platform works.
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">The Definition of Activities</h3>
+                            <p class="fs-5 mb-4">A single screen with a user interface constitutes an activity (UI). A
+                                phone dialer, for example, is an activity. Here are some additional facts regarding
+                                activities to consider.
+                            </p>
+                            <ol>
+                                <li class="fs-5 mb-2">1. Independent Units: Activities are self-contained units.</li>
+                                <li class="fs-5 mb-2">2. Coherence refers to the ability of activities to work together
+                                    to generate coherent wholes.</li>
+                                <li class="fs-5 mb-2">3. Activities that may be triggered by other apps are known as
+                                    invocable activities (i.e. invoke the camera)</li>
+                                <li class="fs-5 mb-2">4. Extendable: We can develop an activity by simply extending the
+                                    Android system's activity class.</li>
+                            </ol>
+                            <h3 class="fw-bolder mb-4 mt-3">The Definition of Service</h3>
+                            <p class="fs-5 mb-4">A service is an application component that runs in the background,
+                                generally for a long time, without interacting with the user. It is a method for the app
+                                to notify the system of anything that it want to continue doing in the background even
+                                after the user exits the app. As an example,
+                            </p>
+                            <ol>
+                                <li class="fs-5 mb-2">1. A service for playing music</li>
+                                <li class="fs-5 mb-2">2. A download service</li>
+                            </ol>
+                            <p class="fs-5 mb-4">Services, unlike activities, do not provide a UI since they run in the
+                                background and do not interact with the user. Similarly to activities, creating a
+                                service is as simple as extending the service class. Here are some of the most common
+                                applications for the services:
+                            </p>
+                            <ol>
+                                <li class="fs-5 mb-2">1. A way for APPs to run in the background</li>
+                                <li class="fs-5 mb-2">2. A way for applications to expose some of this functionality. By
+                                    doing so, applications can bind to the service and use the service.</li>
+                            </ol>
+                            <h2 class="fw-bolder mb-4 mt-5">4. Application components</h2>
+                            <p class="fs-5 mb-4">The basic pieces of <a href="/services/android-development">Android app
+                                    development</a> are known as application components. Each component represents a
+                                distinct entry point for the system into your program. Although each one exists as a
+                                distinct entity and serves a specific purpose, there are some that rely on one another,
+                                and not all of them serve as true entry points.
+                            </p>
+                            <p class="fs-5 mb-4">There are five basic sorts of app components, each with its own
+                                function and life cycle that governs how it is generated and destroyed. They are as
+                                follows:
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">• Activities:</h3>
+                            <p class="fs-5 mb-4">This component depicts a single screen with a user interface (for
+                                instance, an email app may have one activity showing a list of new emails, another
+                                activity composing emails, and another one reading emails). Activities in the app work
+                                together to create a unified user experience. Each of them, though, is self-contained.
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">• Services:</h3>
+                            <p class="fs-5 mb-4">This is a background component that does work for remote processes or
+                                long-running procedures. It lacks a graphical user interface (for instance it might play
+                                music in the background while the user is in a different app).
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">• Content providers:</h3>
+                            <p class="fs-5 mb-4">This is the component in charge of managing a common collection of app
+                                data. This component allows you to query or even modify data stored in the file system,
+                                the web, or a SQLite database (as long as the content provider allows it). This
+                                component may also be used to write and read data that is not shared and is only
+                                accessible to your app.
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">• Broadcast receivers:</h3>
+                            <p class="fs-5 mb-4">This is the component responsible for responding to system-wide
+                                broadcast announcements. The majority of broadcast receivers are generated by the
+                                system, and while they do not have a user interface, they can generate a status bar
+                                message that notifies the user when a broadcast event happens. In general, it serves as
+                                a gateway to the other components and performs only minor functions.
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">• Activating components:</h3>
+                            <p class="fs-5 mb-4">A synchronous communication known as intent activates three of the four
+                                components (i.e. services, activities, and broadcast receivers). Intents also connect
+                                specific components to one another at runtime, regardless of whether the component is
+                                part of your programme.
+                            </p>
+                            <h3 class="fw-bolder mb-4 mt-3">Types of Bindings</h3>
+                            <p class="fs-5 mb-4">When we utilise intentions, it really executes an action in one
+                                activity and initiates another activity as a result. There are several methods for this
+                                to occur.
+                            </p>
+                            <ol>
+                                <li class="fs-5 mb-2"><span class="fw-bold">Direct Binding for Activities: </span>The
+                                    activity or app that generated the intent will initiate an activity from another
+                                    application.</li>
+                                <li class="fs-5 mb-2"><span class="fw-bold">Direct Binding for Services:</span>The
+                                    service might be started directly by the app that generated the intent.</li>
+                                <li class="fs-5 mb-2"><span class="fw-bold">Broadcast:</span>The behavior that is
+                                    causing the intent, and it might broadcast the event to any broadcaster receivers
+                                    who are interested</li>
+                            </ol>
+                            <h2 class="fw-bolder mb-4 mt-5">5. The Android Application, Threads, Loaders, and Tasks</h2>
+                            <p class="fs-5 mb-4">Android is a dispersed market with several devices and operating system
+                                versions. It should be noted that if your gadget supports additional devices and/or
+                                versions, it will undoubtedly necessitate more maintenance and testing, as well as the
+                                associated expenditures. The opposite is also true. You will also need proper fonts,
+                                assets, and layouts to ensure that the greatest possible experiences in the various
+                                screen characteristics are provided. You should also think about the array of
+                                Android-supported sensors and UI features. An application class, one or more activities,
+                                and one or more fragments are all part of any Android app.
+                            </p>
+                            <p class="fs-5 mb-4">You may have services for background activities that should run
+                                constantly at times, but not always. If you want to provide a beautiful and seamless
+                                user interface, make sure the thread is never blocked. As a result, large operations
+                                (computations, I/O, network, and so on) should all be performed asynchronously in the
+                                background (mainly on a different thread of execution). This is why it is critical to
+                                understand the Java language's concurrency features.
+                            </p>
+                            <h2 class="fw-bolder mb-4 mt-5">6. Choosing the right tools</h2>
+                            <p class="fs-5 mb-4">You only need a Mac or Windows PC, any form of Linux, plus Eclipse, the
+                                ADT Plugin, and the Android SDK, all of which are free. You may learn how to set up your
+                                development environment by reading the installation guide on Google; it includes
+                                documentation for everything you need. When developing an Android app, you need keep
+                                several specific requirements in mind. Among them are the following:
+                            </p>
+
+                            <ol>
+                                <li class="fs-5 mb-2">1. Performance and responsiveness: Always reply to user input
+                                    within five seconds or the operating system will ANR you. (ANR-application not
+                                    responding – your only choice is to force close your app.)</li>
+                                <li class="fs-5 mb-2">2. Users will detect lags of greater than 100 milliseconds: As
+                                    previously stated, because there is only one UI thread, it should never be blocked.
+                                </li>
+                                <li class="fs-5 mb-2">3. Scarcity of resources: Wake-locks (the mechanism that forces
+                                    the device to accomplish something against the battery manager's advise to put the
+                                    device to sleep) should be used sparingly. Unnecessary polling of hardware (e.g.,
+                                    GPS or accelerometer) may quickly deplete the battery.</li>
+                            </ol>
+
+                            <p class="fs-5 mb-4">Check out our video that takes you through the introduction to <a
+                                    href="/services/android-development">Android Application Development</a> to get a
+                                taste of what the course entails.
+                            </p>
+                            <h2 class="fw-bolder mb-4 mt-5">7. Conclusion</h2>
+                            <p class="fs-5 mb-4">Consider the instance of a phone call that occurs while you're drafting
+                                an email message. In such instances, the phone programme takes the place of your email
+                                client and moves to the foreground.
+                            </p>
+                            <p class="fs-5 mb-4">Whether you opt to start with a small app on your own or employ a top
+                                <a href="/">Android App development company</a> to construct
+                                a more sophisticated solution, there is still a lot to learn.
+                            </p>
+                        </section>
+                    </article>
+                    <!-- Comments section-->
+                    <section class="mb-5">
+                        <div>
+                            <div class="card-body">
+                                <div class="d-flex mb-4 bd-highlight">
+                                    <!-- Parent comment-->
+                                    <div class="flex-shrink-0 bd-highlight"><img class="rounded-circle"
+                                            src="assets/img/Others/Ajay.webp" alt="..." /></div>
+                                    <div class="ms-3 bd-highlight">
+                                        <div class="fw-bold">AJAY KUMAR G</div>
+                                        Author
+                                    </div>
+
+                                    <div class="ms-3 ms-auto bd-highlight">
+                                        <div class="fw-bold text-primary">Post Views : 00</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Side widgets-->
+                <div class="col-lg-4">
+                    <!-- Search widget-->
+                    <div class="border mb-4">
+                        <div class="card-header fw-bold">Subscribe Bluelook</div>
+                        <div class="card-body">
+                            <div class="text-center">
+                                <input class="form-control mt-3" type="text" placeholder="Name"
+                                    aria-label="Enter search term..." aria-describedby="button-search" />
+                                <input class="form-control mt-3" type="text" placeholder="Email Address"
+                                    aria-label="Enter search term..." aria-describedby="button-search" />
+                                <button class="btn btn-primary ps-5 pe-5 mt-3" type="button">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Categories widget-->
+                    <div class="border mb-4 fw-bold">
+                        <div class="card-header">Categories</div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="/bluelook/blogs">Technology</a></li>
+                                        <li><a href="/bluelook/blogs">Bluelook</a></li>
+                                        <li><a href="/bluelook/blogs">Resources</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-6">
+                                    <ul class="list-unstyled mb-0">
+                                        <li><a href="/bluelook/blogs">Design</a></li>
+                                        <li><a href="/bluelook/blogs">Ecommerce</a></li>
+                                        <li><a href="/bluelook/blogs">Startups</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Side widget-->
+                    <div class="border mb-4 ">
+                        <div class="card-header fw-bold">Recent Insights</div>
+                        <div class="card-body">
+                            <p class="fs-6 mb-4"><a href="/bluelook/blogs/flutter_app_development">1. A Beginners
+                                    Flutter AppDevelopment</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Section>
+
+
+    <!-- Our Works -->
+    <section>
+        <div class="container mb-5">
+            <h5 class="secation-head text-uppercase text-center  w-50 m-auto width-100" data-aos="fade-up"
+                data-aos-duration="2000">
+                Related Blogs
+            </h5>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card h-100">
+                        <img src="assets/img/news and blog/flutter.webp" class="card-img-top" alt="flutter-development">
+                        <div class="card-body">
+                            <a href="/bluelook/blogs/flutter_app_development">
+                                <h5 class="card-title">A Beginners Flutter AppDevelopment</h5>
+                            </a>
+                            <small class="text-muted">Android,IOS,Web</small>
+                            <p class="card-text">As the use of mobile apps grows, various platforms for
+                                developing various types of applications have been introduced
+                                in the market. The days of developing mobile apps as native
+                                apps are long gone.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="card h-100">
+                        <img src="assets/img/news and blog/chatbot.webp" class="card-img-top" alt="Chatbot">
+                        <div class="card-body">
+                            <a>
+                                <h5 class="card-title">Chatbot development Process</h5>
+                            </a>
+                            <small class="text-muted">Chatbot, Technology</small>
+                            <p class="card-text">A chatbot is a computer programme that mimics human conversation by
+                                using voice
+                                commands, text chats, or both. A chatbot is an artificial intelligence (AI) programme
+                                that can simulate
+                                a natural language </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Works End -->
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-dark footer-bg">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row row-cols-1 row-cols-md-4  m-auto">
+                    <!-- Grid column -->
+                    <div class="col">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">COMPANY</h6>
+                        <p>
+                            <a href="/bluelook/about" class="footer-hover second-color">About</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/testimonial" class="footer-hover second-color">Testimonial</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/process" class="footer-hover second-color">Process</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/life-at-bluelook" class="footer-hover second-color">Life @ Bluelook</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/careers" class="footer-hover second-color">Careers</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/engagement-model" class="footer-hover second-color">Engagement Model</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">SERVICES</h6>
+                        <p>
+                            <a href="/services/Mobile-App-development" class="footer-hover second-color">Mobile App
+                                Development</a>
+                        </p>
+                        <p>
+                            <a href="/services/web-development" class="footer-hover second-color">Web Development</a>
+                        </p>
+                        <p>
+                            <a href="/services/ui-development" class="footer-hover second-color">User Experience
+                                Design</a>
+                        </p>
+                        <p>
+                            <a href="/services/iot-development" class="footer-hover second-color">IOT Development</a>
+                        </p>
+                        <p>
+                            <a href="/services/chatbot-development" class="footer-hover second-color">Chatbot
+                                Development</a>
+                        </p>
+                        <p>
+                            <a href="/services/staff-augmentation" class="footer-hover second-color">Staff
+                                Augmentation</a>
+                        </p>
+                        <p>
+                            <a href="/services/digital-transformation" class="footer-hover second-color">Digital
+                                Transformation</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            RESOURCE
+                        </h6>
+                        <p>
+                            <a href="/bluelook/blogs" class="footer-hover second-color">Blog</a>
+                        </p>
+                        <p>
+                            <a href="/bluelook/our-products" class="footer-hover second-color">Our Products</a>
+                        </p>
+                        <p>
+                            <a href="/technologies" class="footer-hover second-color">Technologies</a>
+                        </p>
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            SUPPORT
+                        </h6>
+                        <p>
+                            <a class="footer-hover second-color">24/7 Customer Service</a>
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col">
+
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+
+                        <a class="navbar-brand" href="/"><img src="assets/img/logo/bluelook_logo_for_web.png"
+                                alt="Bluelook" /></a>
+
+                        <p class="second-color mt-4">Location: <span class="text-primary fs-6">Bangalore, India</span>
+                        </p>
+                        <p class="second-color mt-2">Business: <span
+                                class="text-primary fs-6">hello@bluelooktech.com</span></p>
+                        <p class="second-color"> Job Mail: <span class="text-primary"> hr@bluelooktech.com</span></p>
+
+                        <a href="https://join.skype.com/invite/veiT43OOhP9V">
+                            <p class="second-color"> Skype: <span class="text-primary"> sathya@bluelook</span></p>
+                        </a>
+
+                        <p class="second-color mt-2"><img class="flofs me-2" src="assets/img/icons/India.webp"
+                                alt="Bluelook" />India - +91 9952491705</p>
+                                <p class="second-color mt-2"><img class="flofs me-2" src="assets/img/icons/India.webp"
+                                    alt="Bluelook" />India - +91 9597444726</p>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-3">
+
+            <!-- Section: Copyright -->
+            <section class="p-3 pt-0">
+                <div class="row d-flex align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                        <!-- Copyright -->
+                        <div class="p-3">
+                            © 2022 Copyright: Bluelook Technologies Pvt Ltd
+                        </div>
+                        <!-- Copyright -->
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                        <a href="https://www.facebook.com/bluelooktech.2018/"
+                            class="btn btn-outline-dark btn-floating m-1" class="text-secondary" role="button"><i
+                                class="fa fa-facebook" aria-hidden="true"></i></a>
+
+                        <a href="https://www.instagram.com/bluelooktech_bangalore/"
+                            class="btn btn-outline-dark btn-floating m-1" class="text-secondary" role="button"><i
+                                class="fa fa-instagram" aria-hidden="true"></i></a>
+
+                        <a href="https://twitter.com/bluelook_tech" class="btn btn-outline-dark btn-floating m-1"
+                            class="text-secondary" role="button"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
+                        <a href="https://www.linkedin.com/company/bluelook-technologies-pvt-ltd"
+                            class="btn btn-outline-dark btn-floating m-1" class="text-secondary" role="button"><i
+                                class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+                        <a href="https://www.youtube.com/channel/UCPeTer4AwPjc7R1Wyh-mrbw"
+                            class="btn btn-outline-dark btn-floating m-1" class="text-secondary" role="button"><i
+                                class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+            </section>
+            <!-- Section: Copyright -->
+        </div>
+        <!-- Grid container -->
+    </footer>
+    <!-- Footer End-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
+        integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/60af645c6699c7280da93052/1f6mi039t';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
